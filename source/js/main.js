@@ -1,5 +1,7 @@
 /* eslint-disable node/no-unsupported-features/node-builtins */
 (function($, moment, ClipboardJS, config) {
+    $('#footer_site_year').text(new Date().getFullYear());
+
     $('.article img:not(".not-gallery-item")').each(function() {
         // wrap images with link and add caption if possible
         if ($(this).parent('a').length === 0) {
@@ -134,4 +136,4 @@
         $mask.on('click', toggleToc);
         $('.navbar-main .catalogue').on('click', toggleToc);
     }
-}(jQuery, window.moment, window.ClipboardJS, window.IcarusThemeSettings));
+}(jQuery, window.moment, window.ClipboardJS, window.ThemeSettings));
