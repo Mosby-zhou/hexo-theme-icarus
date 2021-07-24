@@ -136,4 +136,7 @@
         $mask.on('click', toggleToc);
         $('.navbar-main .catalogue').on('click', toggleToc);
     }
+    if (window.mermaid) {
+        mermaid.initialize({});
+    }
 }(jQuery, window.moment, window.ClipboardJS, window.ThemeSettings));
